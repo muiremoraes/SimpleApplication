@@ -22,7 +22,7 @@ jobs:
           name: "Say hello"
           command: "echo Hello, World!"
       - run: npm i
-      - run: npm start
+
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/guides/orchestrate/workflows/ & https://circleci.com/docs/reference/configuration-reference/#workflows
