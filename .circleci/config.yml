@@ -20,7 +20,7 @@ jobs:
       - checkout
       - run:
           name: Build image
-              command: docker build -t simpleapplication:latest .
+          command: docker build -t simpleapplication:latest .
 
       - run:
           name: List images
