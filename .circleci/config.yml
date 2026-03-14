@@ -19,9 +19,13 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
-      - run: npm i
+          name: Build image
+          command: docker build -t simpleapplication:latest .
+
+      - run:
+          name: List images
+          command: docker images
+      
 
 
 # Orchestrate jobs using workflows
