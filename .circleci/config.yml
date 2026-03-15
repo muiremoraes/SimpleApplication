@@ -34,7 +34,7 @@ jobs:
               docker build -t simpleapplication:latest . &&
               docker stop simpleapplication || true &&
               docker rm simpleapplication || true &&
-              docker run -d -p 443:3000 --name simpleapplication simpleapplication:latest
+              docker run -d -p 443:8443 --name simpleapplication simpleapplication:latest
             "
             
 # Orchestrate jobs using workflows
