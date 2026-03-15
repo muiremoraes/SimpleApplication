@@ -28,7 +28,7 @@ jobs:
       - run:
           name: Deploy to EC2
           command: |
-            ssh  ec2-user@ec2-34-233-135-193.compute-1.amazonaws.com"
+            ssh  ec2-user@ec2-34-233-135-193.compute-1.amazonaws.com "
               cd SimpleApplication &&
               git pull &&
               docker build -t simpleapplication:latest . &&
